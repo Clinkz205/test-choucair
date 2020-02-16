@@ -16,8 +16,7 @@ public class Imagen_Test {
 		empleopage = new EmpleoPage(driver);
 		driver = empleopage.chromeDriverConnection();
 		empleopage.visit("https://www.choucairtesting.com");
-		
-		
+
 	}
 
 	@After
@@ -26,9 +25,9 @@ public class Imagen_Test {
 
 	@Test
 	public void test() throws InterruptedException {
-	 String resultado = empleopage.testImage();
-	 assertEquals("se encontro la imagen buscado",resultado);
-	 
+		String resultado = empleopage.testImage();
+		assertEquals("se encontro la imagen buscado", resultado);
+
 	}
 
 }
